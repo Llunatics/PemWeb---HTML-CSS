@@ -1,0 +1,128 @@
+:root {
+    --nordic-dark: #2E3440;
+    --nordic-light: #D8DEE9;
+    --nordic-accent: #88C0D0;
+    --nordic-frost: #81A1C1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--nordic-dark);
+    color: var(--nordic-light);
+    line-height: 1.6;
+}
+
+#sticky-title {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--nordic-dark);
+    color: var(--nordic-accent);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+header {
+    background-color: var(--nordic-frost);
+    color: var(--nordic-dark);
+    text-align: center;
+    padding: 50px;
+}
+
+header h1, header h2 {
+    margin: 0;
+    color: var(--nordic-dark);
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.content, .images, .references {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--nordic-accent);
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    border: 1px solid var(--nordic-accent);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--nordic-frost);
+    color: var(--nordic-dark);
+    border: 1px solid var(--nordic-accent);
+    padding: 12px;
+    text-align: center;
+}
+
+.image-box h3 {
+    margin: 10px;
+    color: var(--nordic-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--nordic-accent);
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.references ul li{
+    margin-bottom: 10px;
+}
+
+.references a {
+    color: var(--nordic-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.references a::before {
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.references a:hover {
+    color: var(--nordic-light);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--nordic-frost);
+    color: var(--nordic-dark);
+    text-align: center;
+    padding: 10px;
+}
